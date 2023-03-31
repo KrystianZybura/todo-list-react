@@ -6,7 +6,7 @@ import Section from "./Section";
 import Main from "./Main";
 
 let tasks = [
-  { id: 1, content: "Wynieść śmieci", done: true },
+  { id: 1, content: "Umyć samochód", done: false },
   { id: 2, content: "Zaparzyć herbatę", done: true },
 ];
 
