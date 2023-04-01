@@ -1,6 +1,21 @@
-# Demo
+# Krystina Żybura - To do list - React
+Quite simple task list, without user interactions yet. 
+## Demo:
 Check my website here --> [To do List - React](https://krystianzybura.github.io/todo-list-react/).
 
+## Preview: 
+![preview](images/preview.png)
+## Technologies used in the project 😎
+- *HTML*
+- *CSS*
+- *JavaScript (ES6 + Features)*
+- *FlexBox*
+- *Grid*
+- *BEM*
+- *Immutability*
+- *React.js*
+- *Babel*
+- *Webpack*
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
