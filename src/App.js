@@ -25,7 +25,7 @@ function App() {
         extraHeaderContent={<Buttons tasks={tasks} />}
         title={"Lista zadań"}
       />
-  </Main>
+    </Main>
   );
 
 }
