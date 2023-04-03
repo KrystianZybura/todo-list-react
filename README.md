@@ -14,6 +14,7 @@ Check my website here --> [To do List - React](https://krystianzybura.github.io/
 - *BEM*
 - *Immutability*
 - *React.js*
+- *Create React App*
 - *Babel*
 - *Webpack*
 # Getting Started with Create React App
