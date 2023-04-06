@@ -10,7 +10,7 @@ let tasks = [
   { id: 2, content: "Zaparzyć herbatę", done: true },
 ];
 
-let hideDoneTasks = false;
+let hideDone = false;
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         body={<Form />}
       />
       <Section
-        body={<List tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        body={<List tasks={tasks} hideDone={hideDone} />}
         extraHeaderContent={<Buttons tasks={tasks} />}
         title={"Lista zadań"}
       />
