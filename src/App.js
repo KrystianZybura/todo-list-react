@@ -25,6 +25,10 @@ function App() {
   const toggleTaskDone = (id) => {
     setTasks(tasks => tasks.map((task => task.id === id ? {...task, done: !task.done} : task )));
   };
+  
+  const setAllDone = ()  => {
+    setTasks(tasks => tasks.map(task => ({...task, done: true})));
+  };
 
   return (
     <Main>
@@ -47,6 +51,7 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
+            setAllDone={setAllDone}
           />
         }
         title={
