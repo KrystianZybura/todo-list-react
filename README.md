@@ -1,5 +1,5 @@
 # Krystina Żybura - To do list - React
-Quite simple task list, without user interactions yet. 
+Quite simple task list, made as a part of my homework in my programming course - Youcode 🥰
 ## Demo:
 Check my website here --> [To do List - React](https://krystianzybura.github.io/todo-list-react/).
 
@@ -17,6 +17,7 @@ Check my website here --> [To do List - React](https://krystianzybura.github.io/
 - *Create React App*
 - *Babel*
 - *Webpack*
+- *Hooks*
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
