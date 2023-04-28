@@ -4,7 +4,7 @@ Quite simple task list, made as a part of my homework in my programming course -
 Check my website here --> [To do List - React](https://krystianzybura.github.io/todo-list-react/).
 
 ## Preview: 
-![preview](images/preview.png)
+![preview](images/preview.gif)
 ## Technologies used in the project 😎
 - *HTML*
 - *CSS*
