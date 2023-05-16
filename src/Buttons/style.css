@@ -1,25 +1,26 @@
 @media (max-width: 767px) {
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 15px;
-        align-items: center;
-    }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+  }
 }
 
 .buttons__button {
-    background-color: #fff;
-    color: #008080;
-    border: none;
-    font-size: 18px;
-    transition: 0.3s;
+  background-color: #fff;
+  color: #008080;
+  border: none;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
 .buttons__button:hover {
-    color: hsl(180, 100%, 35%);
+  color: hsl(180, 100%, 35%);
+  cursor: pointer;
 }
 
 .buttons__button:disabled {
-    color: #cacaca;
+  color: #cacaca;
 }

@@ -26,6 +26,7 @@
 
 .list__button:hover {
   background-color: #ee4466;
+  cursor: pointer;
 }
 
 .list__button:active {
@@ -39,6 +40,7 @@
 
 .list__button--done:hover {
   background-color: #00a800;
+  cursor: pointer;
 }
 
 .list__button--checked {
