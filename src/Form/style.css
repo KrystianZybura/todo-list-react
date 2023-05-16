@@ -1,35 +1,35 @@
 .form {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 20px;
-    font-size: 19px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  font-size: 19px;
 }
 
 @media (max-width: 767px) {
-    .form {
-        grid-template-columns: 1fr;
-        font-size: 15px;
-    }
+  .form {
+    grid-template-columns: 1fr;
+    font-size: 15px;
+  }
 }
 
 .form__inputText {
-    padding: 10px;
-    border: 2px solid #d1d1d1;
+  padding: 10px;
+  border: 2px solid #d1d1d1;
 }
 
 .form__button {
-    background-color: #006e80;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    transition: 0.3s;
+  background-color: #006e80;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  transition: 0.3s;
 }
 
 .form__button:hover {
-    background-color: #0092a8;
-    transform: scale(1.06);
+  background-color: #0092a8;
+  transform: scale(1.06);
 }
 
 .form__button:active {
-    background-color: #00acc7;
+  background-color: #00acc7;
 }

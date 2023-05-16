@@ -1,23 +1,30 @@
 # Krystina Żybura - To do list - React
+
 Quite simple task list, made as a part of my homework in my programming course - Youcode 🥰
+
 ## Demo:
+
 Check my website here --> [To do List - React](https://krystianzybura.github.io/todo-list-react/).
 
-## Preview: 
+## Preview:
+
 ![preview](images/preview.gif)
+
 ## Technologies used in the project 😎
-- *HTML*
-- *CSS*
-- *JavaScript (ES6 + Features)*
-- *FlexBox*
-- *Grid*
-- *BEM*
-- *Immutability*
-- *React.js*
-- *Create React App*
-- *Babel*
-- *Webpack*
-- *Hooks*
+
+- _HTML_
+- _CSS_
+- _JavaScript (ES6 + Features)_
+- _FlexBox_
+- _Grid_
+- _BEM_
+- _Immutability_
+- _React.js_
+- _Create React App_
+- _Babel_
+- _Webpack_
+- _Hooks_
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
