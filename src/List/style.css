@@ -9,7 +9,7 @@
   grid-gap: 10px;
   align-items: center;
   word-break: break-word;
-  border-bottom: 2px solid #e8e8e8;
+  border-bottom: 1px solid #b3b3b3;
   padding: 17px 10px;
 }
 
@@ -19,7 +19,7 @@
 
 .list__button {
   background-color: #dc143c;
-  color: white;
+  color: #fff;
   border: none;
   height: 30px;
 }
@@ -30,7 +30,7 @@
 }
 
 .list__button:active {
-  border: 2px solid black;
+  border: 2px solid #000;
 }
 
 .list__button--done {
