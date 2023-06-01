@@ -1,6 +1,6 @@
 import Form from "./Form";
 import Header from "./Header";
-import List from "./List";
+import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Main from "./Main";
@@ -62,7 +62,7 @@ function App() {
       />
       <Section
         body={
-          <List
+          <Tasks
             tasks={tasks}
             hideDone={hideDone}
             removeTask={removeTask}
