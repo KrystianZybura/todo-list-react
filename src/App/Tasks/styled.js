@@ -46,18 +46,16 @@ const Button = styled.button`
   &:active {
     outline: 2px solid #000;
   }
-
-  ${({ done }) =>
-    done &&
-    css`
-      font-size: 19px;
-      background-color: #008000;
-
-      &:hover {
-        background-color: #00a800;
-        cursor: pointer;
-      }
-    `}
 `;
 
-export { List, Item, Content, Button };
+const DoneButton = styled(Button)`
+  font-size: 19px;
+  background-color: #008000;
+
+  &:hover {
+    background-color: #00a800;
+    cursor: pointer;
+  }
+`;
+
+export { List, Item, Content, Button, DoneButton };
