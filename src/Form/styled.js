@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Form = styled.form`
+const StyledForm = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 20px;
@@ -34,4 +34,4 @@ const Button = styled.button`
     background-color: #00acc7;
   }
 `;
-export { Form, Input, Button };
+export { StyledForm, Input, Button };

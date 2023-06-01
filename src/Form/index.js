@@ -1,4 +1,4 @@
-import { Form as FormTemporary, Input, Button } from "./styled";
+import { StyledForm, Input, Button } from "./styled";
 import { useState, useRef } from "react";
 
 const Form = ({ addNewTask }) => {
@@ -19,7 +19,7 @@ const Form = ({ addNewTask }) => {
   };
 
   return (
-    <FormTemporary onSubmit={onFormSubmit}>
+    <StyledForm onSubmit={onFormSubmit}>
       <Input
         ref={inputRef}
         placeholder="Co jest do zrobienia?"
@@ -29,7 +29,7 @@ const Form = ({ addNewTask }) => {
       <Button onClick={() => inputRef.current.focus()} value="Dodaj zadanie">
         Dodaj Zadanie
       </Button>
-    </FormTemporary>
+    </StyledForm>
   );
 };
 
