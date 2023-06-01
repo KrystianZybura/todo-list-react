@@ -52,18 +52,11 @@ const Button = styled.button`
     css`
       font-size: 19px;
       background-color: #008000;
-      color: #008000;
 
       &:hover {
         background-color: #00a800;
         cursor: pointer;
       }
-    `}
-
-  ${({ checked }) =>
-    checked &&
-    css`
-      color: #fff;
     `}
 `;
 
