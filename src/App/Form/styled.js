@@ -4,7 +4,6 @@ const StyledForm = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 20px;
-  font-size: 19px;
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;

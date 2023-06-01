@@ -4,7 +4,6 @@ const StyledSection = styled.section`
   background-color: #fff;
   margin-bottom: 10px;
   box-shadow: 0px 0px 5px 1px #b3b3b3;
-  font-size: 17px;
 `;
 
 const Header = styled.div`
