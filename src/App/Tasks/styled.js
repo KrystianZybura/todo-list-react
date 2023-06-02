@@ -50,10 +50,10 @@ const Button = styled.button`
 
 const DoneButton = styled(Button)`
   font-size: 19px;
-  background-color: ${({ theme }) => theme.colors.DoneButton};
+  background-color: ${({ theme }) => theme.colors.doneButton};
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.DoneButtonHover};
+    background-color: ${({ theme }) => theme.colors.doneButtonHover};
     cursor: pointer;
   }
 `;
