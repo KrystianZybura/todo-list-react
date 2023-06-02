@@ -11,19 +11,18 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: #fff;
-  color: #008080;
+  background: none;
+  color: ${({ theme }) => theme.colors.defaultButton};
   border: none;
-
   transition: 0.3s;
 
   &:hover {
-    color: hsl(180, 100%, 35%);
+    color: ${({ theme }) => theme.colors.defaultButtonHover};
     cursor: pointer;
   }
 
   &:disabled {
-    color: #cacaca;
+    color: ${({ theme }) => theme.colors.defaultButtonDisabled};
   }
 `;
 

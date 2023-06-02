@@ -11,7 +11,7 @@ const Item = styled.li`
   grid-gap: 10px;
   align-items: center;
   word-break: break-word;
-  border-bottom: 1px solid #b3b3b3;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.primaryColor};
   padding: 17px 10px;
 
   ${({ hidden }) =>
@@ -32,14 +32,14 @@ const Content = styled.span`
 const Button = styled.button`
   display: grid;
   place-items: center;
-  background-color: #dc143c;
+  background-color: ${({ theme }) => theme.colors.deleteButton};
   color: #fff;
   border: none;
   height: 33px;
   font-size: 16px;
 
   &:hover {
-    background-color: #ee4466;
+    background-color: ${({ theme }) => theme.colors.deleteButtonHover};
     cursor: pointer;
   }
 
@@ -50,10 +50,10 @@ const Button = styled.button`
 
 const DoneButton = styled(Button)`
   font-size: 19px;
-  background-color: #008000;
+  background-color: ${({ theme }) => theme.colors.DoneButton};
 
   &:hover {
-    background-color: #00a800;
+    background-color: ${({ theme }) => theme.colors.DoneButtonHover};
     cursor: pointer;
   }
 `;

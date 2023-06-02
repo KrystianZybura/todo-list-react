@@ -17,20 +17,20 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: #006e80;
+  background-color: ${({ theme }) => theme.colors.defaultButton};
   color: #fff;
   padding: 10px;
   border: none;
   transition: 0.3s;
 
   &:hover {
-    background-color: #0092a8;
+    background-color: ${({ theme }) => theme.colors.defaultButtonHover};
     transform: scale(1.06);
     cursor: pointer;
   }
 
   &:active {
-    background-color: #00acc7;
+    background-color: ${({ theme }) => theme.colors.defaultButtonActive};
   }
 `;
 export { StyledForm, Input, Button };
