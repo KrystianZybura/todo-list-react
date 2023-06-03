@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     display: flex;
     flex-direction: column;
     gap: 15px;

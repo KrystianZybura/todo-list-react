@@ -12,7 +12,7 @@ const Header = styled.div`
   border-bottom: 2px solid ${({ theme }) => theme.colors.primaryColor};
   padding: 20px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
   }
 `;

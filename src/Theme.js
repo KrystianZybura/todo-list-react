@@ -11,6 +11,9 @@ const theme = {
     doneButton: "#008000",
     doneButtonHover: "#00a800",
   },
+  breakpoints: {
+    mobile: 767,
+  },
 };
 
 export { theme };
