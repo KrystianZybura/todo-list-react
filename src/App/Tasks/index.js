@@ -3,7 +3,7 @@ import { List, Item, Content, Button, DoneButton } from "./styled";
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
   <List>
     {tasks.map((task) => (
-      <Item hidden={hideDone} done={task.done} key={task.id}>
+      <Item hidden={task.done && hideDone} done={task.done} key={task.id}>
         <DoneButton done onClick={() => toggleTaskDone(task.id)}>
           {task.done ? "✓" : ""}
         </DoneButton>
