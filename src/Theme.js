@@ -8,8 +8,8 @@ const theme = {
     defaultButtonDisabled: "#cacaca",
     deleteButton: "#dc143c",
     deleteButtonHover: "#ee4466",
-    doneButton: "#008000",
-    doneButtonHover: "#00a800",
+    toggleDoneButton: "#008000",
+    toggleDoneButtonHover: "#00a800",
   },
   breakpoints: {
     mobile: 767,

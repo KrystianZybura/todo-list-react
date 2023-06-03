@@ -48,14 +48,14 @@ const Button = styled.button`
   }
 `;
 
-const DoneButton = styled(Button)`
+const ToggleDoneButton = styled(Button)`
   font-size: 19px;
-  background-color: ${({ theme }) => theme.colors.doneButton};
+  background-color: ${({ theme }) => theme.colors.toggleDoneButton};
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.doneButtonHover};
+    background-color: ${({ theme }) => theme.colors.toggleDoneButtonHover};
     cursor: pointer;
   }
 `;
 
-export { List, Item, Content, Button, DoneButton };
+export { List, Item, Content, Button, ToggleDoneButton };
