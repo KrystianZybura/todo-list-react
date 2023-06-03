@@ -21,7 +21,7 @@ const Button = styled.button`
   color: #fff;
   padding: 10px;
   border: none;
-  transition: 0.3s;
+  transition: background 0.3s;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.defaultButtonHover};
