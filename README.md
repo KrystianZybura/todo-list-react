@@ -17,13 +17,13 @@ Check my website here --> [To do List - React](https://krystianzybura.github.io/
 - _JavaScript (ES6 + Features)_
 - _FlexBox_
 - _Grid_
-- _BEM_
 - _Immutability_
 - _React.js_
 - _Create React App_
 - _Babel_
 - _Webpack_
 - _Hooks_
+- _Styled-Components_
 
 # Getting Started with Create React App
 
