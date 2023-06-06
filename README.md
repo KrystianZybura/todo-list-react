@@ -23,7 +23,9 @@ Check my website here --> [To do List - React](https://krystianzybura.github.io/
 - _Babel_
 - _Webpack_
 - _Hooks_
+- _Custom Hooks_
 - _Styled-Components_
+- _Local storage_
 
 # Getting Started with Create React App
 
