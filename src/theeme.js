@@ -4,7 +4,7 @@ const theme = {
     primaryColor: "#b3b3b3",
     defaultButton: "#006e80",
     defaultButtonHover: "#0092a8",
-    defaultButtonActive: "DarkTurquoise",
+    defaultButtonActive: "#00ced1",
     defaultButtonDisabled: "#cacaca",
     deleteButton: "#dc143c",
     deleteButtonHover: "#ee4466",
