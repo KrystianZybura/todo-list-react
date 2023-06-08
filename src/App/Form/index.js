@@ -21,6 +21,7 @@ const Form = ({ addNewTask }) => {
   return (
     <StyledForm onSubmit={onFormSubmit}>
       <Input
+        autoFocus
         ref={inputRef}
         placeholder="Co jest do zrobienia?"
         value={newTaskContent}
