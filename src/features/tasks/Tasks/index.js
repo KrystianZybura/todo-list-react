@@ -1,13 +1,13 @@
-import Form from "./Form";
-import Header from "./Header";
-import Tasks from "./Tasks";
-import Buttons from "./Buttons";
-import Section from "./Section";
-import Main from "./Main";
+import Form from "../Form";
+import Header from "../../../common/Header";
+import TaskList from "../TaskList";
+import Buttons from "../Buttons";
+import Section from "../../../common/Section";
+import Main from "../../../common/Main";
 import { useState } from "react";
 import { useTasks } from "./useTasks";
 
-function App() {
+function Tasks() {
   const [hideDone, setHideDone] = useState(false);
 
   const toggleHideDone = () => {
@@ -26,7 +26,7 @@ function App() {
       />
       <Section
         body={
-          <Tasks
+          <TaskList
             tasks={tasks}
             hideDone={hideDone}
             removeTask={removeTask}
@@ -47,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default Tasks;
