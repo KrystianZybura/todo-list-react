@@ -3,8 +3,8 @@ import { Container, Button } from "./styled";
 import { selectTasks, toggleHideDone, setAllDone } from "../tasksSlice";
 
 const Buttons = () => {
-  const dispatch = useDispatch();
   const { tasks, hideDone } = useSelector(selectTasks);
+  const dispatch = useDispatch();
 
   return (
     tasks.length > 0 && (

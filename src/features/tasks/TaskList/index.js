@@ -3,8 +3,8 @@ import { List, Item, Content, Button, ToggleDoneButton } from "./styled";
 import { selectTasks, toggleTaskDone, removeTask } from "../tasksSlice";
 
 const TaskList = () => {
-  const dispatch = useDispatch();
   const { tasks, hideDone } = useSelector(selectTasks);
+  const dispatch = useDispatch();
 
   return (
     <List>
