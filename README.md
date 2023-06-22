@@ -25,7 +25,8 @@ Check my website here --> [To do List - React](https://krystianzybura.github.io/
 - _Hooks_
 - _Custom Hooks_
 - _Styled-Components_
-- _Local storage_
+- _Redux Toolkit_
+- _React - Redux_
 
 # Getting Started with Create React App
 
