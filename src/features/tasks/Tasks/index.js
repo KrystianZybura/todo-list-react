@@ -3,11 +3,11 @@ import Header from "../../../common/Header";
 import TaskList from "../TaskList";
 import Buttons from "../Buttons";
 import Section from "../../../common/Section";
-import Main from "../../../common/Main";
+import { Container } from "./styled";
 
 function Tasks() {
   return (
-    <Main>
+    <Container>
       <Header title={"Lista zadań"} />
       <Section title={"Dodaj nowe zadanie"} body={<Form />} />
       <Section
@@ -15,7 +15,7 @@ function Tasks() {
         extraHeaderContent={<Buttons />}
         title={"Lista zadań"}
       />
-    </Main>
+    </Container>
   );
 }
 
