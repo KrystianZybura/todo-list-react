@@ -1,12 +1,10 @@
+import axios from "axios";
+
 const getExampleTasks = async () => {
   try {
-    const response = await fetch("/todo-list-react/exampleTasks.json");
+    const response = await axios.get("/todo-list-react/exampleTasks.json");
 
-    if (!response.ok) {
-      new Error(response.statusText);
-    }
-
-    return await response.json();
+    return response.data;
   } catch (error) {
     console.error(error);
   }
