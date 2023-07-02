@@ -23,7 +23,7 @@ const Buttons = () => {
     !areTasksEmpty && (
       <Container>
         <Button onClick={() => dispatch(fetchExampleTasks())}>
-          Pobierz dodakowe zadania
+          Pobierz przykładowe zadania
         </Button>
         <Button
           disabled={!isAnyTaskDone}
