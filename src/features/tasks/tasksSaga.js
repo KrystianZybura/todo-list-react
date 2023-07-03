@@ -1,4 +1,4 @@
-import { call, put, takeEvery } from "redux-saga/effects";
+import { call, debounce, put } from "redux-saga/effects";
 import { getExampleTasks } from "./getExampleTasks";
 import { setTasks, fetchExampleTasks } from "./tasksSlice";
 
@@ -15,5 +15,5 @@ function* fetchExampleTaskHandler() {
 }
 
 export function* watchFetchExampleTasks() {
-  yield takeEvery(fetchExampleTasks.type, fetchExampleTaskHandler);
+  yield debounce(500, fetchExampleTasks.type, fetchExampleTaskHandler);
 }
