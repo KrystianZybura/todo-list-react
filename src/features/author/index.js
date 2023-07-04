@@ -1,7 +1,8 @@
 import Section from "../../common/Section";
+import Container from "../../common/Container";
 
 const Author = () => (
-  <>
+  <Container>
     <Section
       title={"O autorze"}
       body={
@@ -14,7 +15,7 @@ const Author = () => (
         </p>
       }
     />
-  </>
+  </Container>
 );
 
 export default Author;

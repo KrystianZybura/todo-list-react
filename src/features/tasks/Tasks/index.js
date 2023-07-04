@@ -3,7 +3,7 @@ import Header from "../../../common/Header";
 import TaskList from "../TaskList";
 import Buttons from "../Buttons";
 import Section from "../../../common/Section";
-import { Container } from "./styled";
+import Container from "../../../common/Container";
 
 function Tasks() {
   return (
