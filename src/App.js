@@ -6,6 +6,7 @@ import {
 } from "react-router-dom/cjs/react-router-dom.min";
 import Tasks from "./features/tasks/Tasks";
 import Author from "./features/author";
+import Task from "./features/tasks/TaskPage";
 
 const App = () => (
   <HashRouter>
@@ -23,6 +24,9 @@ const App = () => (
     <Switch>
       <Route path="/autor">
         <Author />
+      </Route>
+      <Route path="/zadania/:id">
+        <Task />
       </Route>
       <Route path="/zadania">
         <Tasks />

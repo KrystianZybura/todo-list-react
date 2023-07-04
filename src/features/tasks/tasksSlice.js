@@ -54,6 +54,9 @@ export const selectIsAnyTaskDone = (state) =>
 export const selectIsEveryTaskDone = (state) =>
   selectTasks(state).every(({ done }) => done);
 
+export const getTaskById = (state, taskId) =>
+  selectTasks(state).find(({ id }) => id === taskId);
+
 export const {
   addTask,
   toggleTaskDone,

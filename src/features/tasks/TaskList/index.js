@@ -6,6 +6,7 @@ import {
   toggleTaskDone,
   removeTask,
 } from "../tasksSlice";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const TaskList = () => {
   const dispatch = useDispatch();
@@ -20,7 +21,9 @@ const TaskList = () => {
           <ToggleDoneButton onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? "✓" : ""}
           </ToggleDoneButton>
-          <Content done={task.done}>{task.content}</Content>
+          <Content done={task.done}>
+            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+          </Content>
           <Button onClick={() => dispatch(removeTask(task.id))}>🗑</Button>
         </Item>
       ))}
