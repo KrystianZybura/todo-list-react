@@ -12,19 +12,19 @@ const App = () => (
     <nav>
       <ul>
         <li>
-          <Link to="/todo-list-react">Strona główna</Link>
+          <Link to="/zadania">Strona główna</Link>
         </li>
         <li>
-          <Link to="/author">O autorze</Link>
+          <Link to="/autor">O autorze</Link>
         </li>
       </ul>
     </nav>
 
     <Switch>
-      <Route path="/author">
+      <Route path="/autor">
         <Author />
       </Route>
-      <Route path="/todo-list-react">
+      <Route path="/zadania">
         <Tasks />
       </Route>
     </Switch>
