@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch,
   Link,
@@ -8,7 +8,7 @@ import Tasks from "./features/tasks/Tasks";
 import Author from "./features/author";
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <nav>
       <ul>
         <li>
@@ -28,7 +28,7 @@ const App = () => (
         <Tasks />
       </Route>
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
