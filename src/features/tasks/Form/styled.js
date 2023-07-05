@@ -11,11 +11,6 @@ const StyledForm = styled.form`
   }
 `;
 
-const Input = styled.input`
-  padding: 10px;
-  border: 2px solid #d1d1d1;
-`;
-
 const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.defaultButton};
   color: #fff;
@@ -34,4 +29,4 @@ const Button = styled.button`
   }
 `;
 
-export { StyledForm, Input, Button };
+export { StyledForm, Button };
