@@ -11,7 +11,7 @@ function TasksPage() {
     <Container>
       <Header title={"Lista zadań"} />
       <Section title={"Dodaj nowe zadanie"} body={<Form />} />
-      <Section title={"Wyszukaj zadanie"} body={<TaskSearch />} />
+      <Section title={"Wyszukiwarka"} body={<TaskSearch />} />
       <Section
         body={<TaskList />}
         extraHeaderContent={<Buttons />}
