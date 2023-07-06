@@ -6,7 +6,7 @@ import {
   Redirect,
 } from "react-router-dom/cjs/react-router-dom.min";
 import TasksPage from "./features/tasks/TasksPage";
-import Author from "./features/author";
+import AuthorPage from "./features/author/AuthorPage";
 import TaskPage from "./features/tasks/TaskPage";
 
 const App = () => (
@@ -24,7 +24,7 @@ const App = () => (
 
     <Switch>
       <Route path="/autor">
-        <Author />
+        <AuthorPage />
       </Route>
       <Route path="/zadania/:id">
         <TaskPage />
