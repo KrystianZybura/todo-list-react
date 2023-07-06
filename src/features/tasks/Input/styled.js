@@ -6,4 +6,4 @@ const Input = styled.input`
   width: 100%;
 `;
 
-export { Input };
+export default Input;
