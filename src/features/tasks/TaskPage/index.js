@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
 
-const Task = () => {
+const TaskPage = () => {
   const { id } = useParams();
 
   const task = useSelector((state) => getTaskById(state, id));
@@ -25,4 +25,4 @@ const Task = () => {
   );
 };
 
-export default Task;
+export default TaskPage;

@@ -5,7 +5,7 @@ import {
   selectHideDone,
   toggleTaskDone,
   removeTask,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const TaskList = () => {

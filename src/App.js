@@ -5,9 +5,9 @@ import {
   Link,
   Redirect,
 } from "react-router-dom/cjs/react-router-dom.min";
-import Tasks from "./features/tasks/Tasks";
+import TasksPage from "./features/tasks/TasksPage";
 import Author from "./features/author";
-import Task from "./features/tasks/TaskPage";
+import TaskPage from "./features/tasks/TaskPage";
 
 const App = () => (
   <HashRouter>
@@ -27,10 +27,10 @@ const App = () => (
         <Author />
       </Route>
       <Route path="/zadania/:id">
-        <Task />
+        <TaskPage />
       </Route>
       <Route path="/zadania">
-        <Tasks />
+        <TasksPage />
       </Route>
       <Route path="/">
         <Redirect to="/zadania" />

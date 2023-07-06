@@ -8,7 +8,7 @@ import {
   selectAreTasksEmpty,
   selectIsAnyTaskDone,
   fetchExampleTasks,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 
 const Buttons = () => {
   const dispatch = useDispatch();
