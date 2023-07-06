@@ -3,6 +3,7 @@ import {
   Route,
   Switch,
   Link,
+  Redirect,
 } from "react-router-dom/cjs/react-router-dom.min";
 import Tasks from "./features/tasks/Tasks";
 import Author from "./features/author";
@@ -30,6 +31,9 @@ const App = () => (
       </Route>
       <Route path="/zadania">
         <Tasks />
+      </Route>
+      <Route path="/">
+        <Redirect to="/zadania" />
       </Route>
     </Switch>
   </HashRouter>
