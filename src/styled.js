@@ -2,12 +2,12 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import styled from "styled-components";
 
 const Navigation = styled.nav`
-  background-color: teal;
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 10px;
 `;
 
 const StyledNavlink = styled(NavLink)`
-  color: white;
+  color: #fff;
   text-decoration: none;
 
   &.active {
