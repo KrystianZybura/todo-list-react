@@ -3,13 +3,13 @@ import styled from "styled-components";
 const StyledSection = styled.section`
   background-color: #fff;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 5px 1px ${({ theme }) => theme.colors.primaryColor};
+  box-shadow: 0px 0px 5px 1px ${({ theme }) => theme.colors.defaultBorder};
 `;
 
 const Header = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.primaryColor};
+  border-bottom: 2px solid ${({ theme }) => theme.colors.defaultBorder};
   padding: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {

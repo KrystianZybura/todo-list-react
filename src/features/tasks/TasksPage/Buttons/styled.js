@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Container = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
@@ -12,17 +12,21 @@ const Container = styled.div`
 
 const Button = styled.button`
   background: none;
-  color: ${({ theme }) => theme.colors.defaultButton};
+  color: ${({ theme }) => theme.colors.primary};
   border: none;
   transition: 0.3s;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.defaultButtonHover};
-    cursor: pointer;
+    ${({ disabled }) =>
+      !disabled &&
+      css`
+        filter: brightness(120%);
+        cursor: pointer;
+      `}
   }
 
   &:disabled {
-    color: ${({ theme }) => theme.colors.defaultButtonDisabled};
+    color: ${({ theme }) => theme.colors.buttonDisabled};
   }
 `;
 

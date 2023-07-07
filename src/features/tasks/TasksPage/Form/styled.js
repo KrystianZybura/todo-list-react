@@ -12,20 +12,20 @@ const StyledForm = styled.form`
 `;
 
 const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.defaultButton};
+  background-color: ${({ theme }) => theme.colors.primary};
   color: #fff;
   padding: 10px;
   border: none;
-  transition: background 0.3s;
+  transition: all 0.3s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.defaultButtonHover};
+    filter: brightness(120%);
     transform: scale(1.06);
     cursor: pointer;
   }
 
   &:active {
-    background-color: ${({ theme }) => theme.colors.defaultButtonActive};
+    filter: brightness(140%);
   }
 `;
 

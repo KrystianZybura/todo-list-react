@@ -8,6 +8,11 @@ const List = styled.ul`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  color: ${({ theme }) => theme.colors.primary};
+
+  &:hover {
+    filter: brightness(120%);
+  }
 `;
 
 const Item = styled.li`
@@ -16,7 +21,7 @@ const Item = styled.li`
   grid-gap: 10px;
   align-items: center;
   word-break: break-word;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.primaryColor};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.defaultBorder};
   padding: 17px 10px;
 
   ${({ hidden }) =>
@@ -44,7 +49,7 @@ const Button = styled.button`
   font-size: 16px;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.deleteButtonHover};
+    filter: brightness(120%);
     cursor: pointer;
   }
 
@@ -56,11 +61,6 @@ const Button = styled.button`
 const ToggleDoneButton = styled(Button)`
   font-size: 19px;
   background-color: ${({ theme }) => theme.colors.toggleDoneButton};
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.toggleDoneButtonHover};
-    cursor: pointer;
-  }
 `;
 
 export { List, StyledLink, Item, Content, Button, ToggleDoneButton };
