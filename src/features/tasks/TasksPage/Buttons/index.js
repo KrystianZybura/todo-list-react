@@ -10,7 +10,7 @@ import {
   fetchExampleTasks,
 } from "../../tasksSlice";
 
-const Buttons = () => {
+const Buttons = ({ component }) => {
   const dispatch = useDispatch();
 
   const hideDone = useSelector(selectHideDone);
@@ -22,21 +22,26 @@ const Buttons = () => {
   return (
     !areTasksEmpty && (
       <Container>
-        <Button onClick={() => dispatch(fetchExampleTasks())}>
-          Pobierz przykładowe zadania
-        </Button>
-        <Button
-          disabled={!isAnyTaskDone}
-          onClick={() => dispatch(toggleHideDone())}
-        >
-          {hideDone ? "Pokaż" : "Ukryj"} ukończone
-        </Button>
-        <Button
-          onClick={() => dispatch(setAllDone())}
-          disabled={isEveryTaskDone}
-        >
-          Ukończ wszystkie
-        </Button>
+        {component === "Form" ? (
+          <Button onClick={() => dispatch(fetchExampleTasks())}>
+            Pobierz przykładowe zadania
+          </Button>
+        ) : (
+          <>
+            <Button
+              disabled={!isAnyTaskDone}
+              onClick={() => dispatch(toggleHideDone())}
+            >
+              {hideDone ? "Pokaż" : "Ukryj"} ukończone
+            </Button>
+            <Button
+              onClick={() => dispatch(setAllDone())}
+              disabled={isEveryTaskDone}
+            >
+              Ukończ wszystkie
+            </Button>
+          </>
+        )}
       </Container>
     )
   );

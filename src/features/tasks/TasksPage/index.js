@@ -9,12 +9,16 @@ import TaskSearch from "./TaskSearch";
 function TasksPage() {
   return (
     <Container>
-      <Header title={"Lista zadań"} />
-      <Section title={"Dodaj nowe zadanie"} body={<Form />} />
+      <Header title={"Lista zadań"} />{" "}
+      <Section
+        body={<Form />}
+        extraHeaderContent={<Buttons component={"Form"} />}
+        title={"Dodaj nowe zadanie"}
+      />
       <Section title={"Wyszukiwarka"} body={<TaskSearch />} />
       <Section
         body={<TaskList />}
-        extraHeaderContent={<Buttons />}
+        extraHeaderContent={<Buttons component={"TaskList"} />}
         title={"Lista zadań"}
       />
     </Container>
