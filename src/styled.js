@@ -1,17 +1,25 @@
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import styled from "styled-components";
 
+const Navigation = styled.nav`
+  background-color: teal;
+  padding: 10px;
+`;
+
 const StyledNavlink = styled(NavLink)`
+  color: white;
   text-decoration: none;
+
   &.active {
-    color: red;
+    font-weight: bold;
   }
 `;
 
 const UnorderedList = styled.ul`
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  gap: 50px;
   list-style: none;
 `;
 
-export { StyledNavlink, UnorderedList };
+export { Navigation, StyledNavlink, UnorderedList };

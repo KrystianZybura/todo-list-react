@@ -7,20 +7,23 @@ import {
 import TasksPage from "./features/tasks/TasksPage";
 import AuthorPage from "./features/author/AuthorPage";
 import TaskPage from "./features/tasks/TaskPage";
-import { StyledNavlink, UnorderedList } from "./styled";
+import { Navigation, StyledNavlink, UnorderedList } from "./styled";
+import Container from "./common/Container";
 
 const App = () => (
   <HashRouter>
-    <nav>
-      <UnorderedList>
-        <li>
-          <StyledNavlink to="/zadania">Strona główna</StyledNavlink>
-        </li>
-        <li>
-          <StyledNavlink to="/autor">O autorze</StyledNavlink>
-        </li>
-      </UnorderedList>
-    </nav>
+    <Navigation>
+      <Container>
+        <UnorderedList>
+          <li>
+            <StyledNavlink to="/zadania">Strona główna</StyledNavlink>
+          </li>
+          <li>
+            <StyledNavlink to="/autor">O autorze</StyledNavlink>
+          </li>
+        </UnorderedList>
+      </Container>
+    </Navigation>
 
     <Switch>
       <Route path="/autor">
