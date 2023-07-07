@@ -21,7 +21,7 @@ const Item = styled.li`
   grid-gap: 10px;
   align-items: center;
   word-break: break-word;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.defaultBorder};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   padding: 17px 10px;
 
   ${({ hidden }) =>

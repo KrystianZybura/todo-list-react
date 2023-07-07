@@ -26,7 +26,7 @@ const Button = styled.button`
   }
 
   &:disabled {
-    color: ${({ theme }) => theme.colors.buttonDisabled};
+    color: ${({ theme }) => theme.colors.disabledButton};
   }
 `;
 
