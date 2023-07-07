@@ -1,18 +1,27 @@
 import Section from "../../common/Section";
 import Container from "../../common/Container";
+import Header from "../../common/Header";
 
 const AuthorPage = () => (
   <Container>
+    <Header title={"O autorze"} />
     <Section
-      title={"O autorze"}
+      title={"Krystian Żybura"}
       body={
-        <p>
-          {" "}
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-          assumenda facilis illo quia sunt quis at, eum aliquam, consequuntur
-          excepturi aperiam. Expedita quam odit eum assumenda repudiandae porro
-          impedit sint?{" "}
-        </p>
+        <article>
+          Znasz już moje imię, obecnie mam 21 lat i{" "}
+          <strong>
+            posiadam niesamowitą pasję w stosunku do urządzeń elektronicznych
+          </strong>
+          . Interesuje mnie ich budowa, czyli z czego dokładnie się składają,
+          jak są zaprogramowane oraz wiedza na temat ich możliwości, czy też
+          jakie możemy wprowadzić usprawniania, aby działały one wydajniej. Nie
+          zdziwi cię pewnie fakt, że z zawodu jestem informatykiem. Po
+          ukończeniu szkoły średniej postanowiłem kontynuować rozwijanie się w
+          tym kierunku zawodowym a jako, że jest to dziedzina niezwykle obszerna
+          i można ją zgłebiać w zasadzie bez końca, to finalnie zdecydowałem się
+          na rozpoczęcie nauki programowania.
+        </article>
       }
     />
   </Container>
