@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import styled, { css } from "styled-components";
 
 const List = styled.ul`
   margin-top: -10px;
   padding: 0;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 const Item = styled.li`
@@ -58,4 +63,4 @@ const ToggleDoneButton = styled(Button)`
   }
 `;
 
-export { List, Item, Content, Button, ToggleDoneButton };
+export { List, StyledLink, Item, Content, Button, ToggleDoneButton };
