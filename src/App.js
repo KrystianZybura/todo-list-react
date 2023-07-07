@@ -16,7 +16,7 @@ const App = () => (
       <Container>
         <UnorderedList>
           <li>
-            <StyledNavlink to="/zadania">Strona główna</StyledNavlink>
+            <StyledNavlink to="/zadania">Zadania</StyledNavlink>
           </li>
           <li>
             <StyledNavlink to="/autor">O autorze</StyledNavlink>
