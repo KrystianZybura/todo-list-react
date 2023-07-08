@@ -1,4 +1,11 @@
-import { call, debounce, put, select, takeEvery } from "redux-saga/effects";
+import {
+  call,
+  debounce,
+  put,
+  select,
+  takeEvery,
+  all,
+} from "redux-saga/effects";
 import { getExampleTasks } from "./getExampleTasks";
 import {
   setTasks,
@@ -12,7 +19,7 @@ function* fetchExampleTaskHandler() {
   try {
     const exampleTasks = yield call(getExampleTasks);
 
-    yield put(setTasks(exampleTasks)) && put(setIsFetchingExampleTasks());
+    yield all([put(setTasks(exampleTasks)), put(setIsFetchingExampleTasks())]);
   } catch (error) {
     console.error(error);
 
