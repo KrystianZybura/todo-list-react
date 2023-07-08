@@ -8,6 +8,8 @@ import {
   selectAreTasksEmpty,
   selectIsAnyTaskDone,
   fetchExampleTasks,
+  selectFetchingStatus,
+  setFetchingStatus,
 } from "../../tasksSlice";
 
 const Buttons = ({ component }) => {
@@ -18,13 +20,24 @@ const Buttons = ({ component }) => {
   const isAnyTaskDone = useSelector(selectIsAnyTaskDone);
   const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
   const areTasksEmpty = useSelector(selectAreTasksEmpty);
+  const status = useSelector(selectFetchingStatus);
+
+  const onFetchExampleTasksSubmit = () => {
+    dispatch(fetchExampleTasks());
+    dispatch(setFetchingStatus("loading"));
+  };
 
   return (
     !areTasksEmpty && (
       <Container>
         {component === "Form" ? (
-          <Button onClick={() => dispatch(fetchExampleTasks())}>
-            Pobierz przykładowe zadania
+          <Button
+            disabled={status === "loading"}
+            onClick={onFetchExampleTasksSubmit}
+          >
+            {status === "loading"
+              ? "Ładowanie.."
+              : "Pobierz przykładowe zadania"}
           </Button>
         ) : (
           <>
