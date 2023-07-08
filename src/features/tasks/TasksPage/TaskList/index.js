@@ -13,14 +13,13 @@ import {
   removeTask,
   selectTasksByQuery,
 } from "../../tasksSlice";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import searchQueryParamName from "../searchQueryParamName";
+import { useQueryParameter } from "../queryParameters";
 
 const TaskList = () => {
   const dispatch = useDispatch();
 
-  const location = useLocation();
-  const query = new URLSearchParams(location.search).get(searchQueryParamName);
+  const query = useQueryParameter(searchQueryParamName);
 
   const tasks = useSelector((state) => selectTasksByQuery(state, query));
   const hideDone = useSelector(selectHideDone);
