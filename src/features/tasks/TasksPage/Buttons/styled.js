@@ -14,7 +14,7 @@ const Button = styled.button`
   background: none;
   color: ${({ theme }) => theme.colors.primary};
   border: none;
-  transition: 0.3s;
+  transition: 0.3s disabled 0s;
 
   &:hover {
     ${({ disabled }) =>
