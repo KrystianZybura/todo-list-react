@@ -5,7 +5,7 @@ import {
   Redirect,
 } from "react-router-dom/cjs/react-router-dom.min";
 import TasksPage from "./features/tasks/TasksPage";
-import AuthorPage from "./features/author/AuthorPage";
+import AuthorPage from "./features/author";
 import TaskPage from "./features/tasks/TaskPage";
 import { Navigation, StyledNavlink, UnorderedList } from "./styled";
 import Container from "./common/Container";
