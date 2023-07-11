@@ -1,4 +1,4 @@
-import Input from "../../Input/styled";
+import Input from "../../Input";
 import searchQueryParamName from "../searchQueryParamName";
 import {
   useQueryParameter,
