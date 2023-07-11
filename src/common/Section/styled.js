@@ -11,6 +11,7 @@ const Header = styled.div`
   grid-template-columns: 1fr auto;
   border-bottom: 2px solid ${({ theme }) => theme.colors.border};
   padding: 20px;
+  padding-top: 25px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
