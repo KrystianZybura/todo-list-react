@@ -19,11 +19,9 @@ const App = () => (
       <Route path="/zadania/:id">
         <TaskPage />
       </Route>
-      <Route path="/zadania">
-        <TasksPage />
-      </Route>
       <Route path="/">
         <Redirect to="/zadania" />
+        <TasksPage />
       </Route>
     </Switch>
   </HashRouter>
