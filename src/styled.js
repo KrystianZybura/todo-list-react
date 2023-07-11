@@ -6,7 +6,7 @@ const Navigation = styled.nav`
   padding: 10px;
 `;
 
-const StyledNavlink = styled(NavLink)`
+const StyledNavLink = styled(NavLink)`
   color: #fff;
   text-decoration: none;
 
@@ -28,4 +28,4 @@ const UnorderedList = styled.ul`
   list-style: none;
 `;
 
-export { Navigation, StyledNavlink, UnorderedList };
+export { Navigation, StyledNavLink, UnorderedList };

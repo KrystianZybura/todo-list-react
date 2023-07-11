@@ -7,7 +7,7 @@ import {
 import TasksPage from "./features/tasks/TasksPage";
 import AuthorPage from "./features/author";
 import TaskPage from "./features/tasks/TaskPage";
-import { Navigation, StyledNavlink, UnorderedList } from "./styled";
+import { Navigation, StyledNavLink, UnorderedList } from "./styled";
 import Container from "./common/Container";
 
 const App = () => (
@@ -16,10 +16,10 @@ const App = () => (
       <Container>
         <UnorderedList>
           <li>
-            <StyledNavlink to="/zadania">Zadania</StyledNavlink>
+            <StyledNavLink to="/zadania">Zadania</StyledNavLink>
           </li>
           <li>
-            <StyledNavlink to="/autor">O autorze</StyledNavlink>
+            <StyledNavLink to="/autor">O autorze</StyledNavLink>
           </li>
         </UnorderedList>
       </Container>
