@@ -18,7 +18,7 @@ const TaskPage = () => {
         title={task ? task.content : "Nie znaleziono zadania 😥"}
         extraHeaderContent={
           <Link
-            link={"/zadania/"}
+            url={"/zadania/"}
             content={"Powrót do listy zadań"}
             extraHeaderContent
           />
