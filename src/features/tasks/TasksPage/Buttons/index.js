@@ -20,7 +20,7 @@ const Buttons = ({ component }) => {
   const areTasksEmpty = useSelector(selectAreTasksEmpty);
 
   const hideDone = useSelector(selectHideDone);
-  const loading = useSelector(selectIsFetchingExampleTasks);
+  const isLoading = useSelector(selectIsFetchingExampleTasks);
 
   const fetchExampleTasksHandler = () => {
     dispatch(fetchExampleTasks());
@@ -31,8 +31,8 @@ const Buttons = ({ component }) => {
     !areTasksEmpty && (
       <Container>
         {component === "Form" ? (
-          <Button disabled={loading} onClick={fetchExampleTasksHandler}>
-            {loading ? "Ładowanie.." : "Pobierz przykładowe zadania"}
+          <Button disabled={isLoading} onClick={fetchExampleTasksHandler}>
+            {isLoading ? "Ładowanie.." : "Pobierz przykładowe zadania"}
           </Button>
         ) : (
           <>
