@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Container, Button } from "./styled";
+import { Wrapper, Button } from "./styled";
 import {
   toggleHideDone,
   setAllDone,
@@ -29,7 +29,7 @@ const Buttons = ({ component }) => {
 
   return (
     !areTasksEmpty && (
-      <Container>
+      <Wrapper>
         {component === "Form" ? (
           <Button disabled={isLoading} onClick={fetchExampleTasksHandler}>
             {isLoading ? "Ładowanie.." : "Pobierz przykładowe zadania"}
@@ -50,7 +50,7 @@ const Buttons = ({ component }) => {
             </Button>
           </>
         )}
-      </Container>
+      </Wrapper>
     )
   );
 };

@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const Container = styled.div`
+const Wrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     display: grid;
     gap: 15px;
@@ -35,4 +35,4 @@ const Button = styled.button`
   }
 `;
 
-export { Button, Container };
+export { Button, Wrapper };
