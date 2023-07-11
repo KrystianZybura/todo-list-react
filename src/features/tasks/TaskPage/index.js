@@ -20,7 +20,7 @@ const TaskPage = () => {
           <Link
             url={"/zadania/"}
             content={"Powrót do listy zadań"}
-            extraHeaderContent
+            specialLink
           />
         }
         body={

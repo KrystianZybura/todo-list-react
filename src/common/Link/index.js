@@ -1,7 +1,7 @@
 import { StyledLink } from "./styled";
 
-const Link = ({ url, content, extraHeaderContent }) => (
-  <StyledLink to={url} extraHeaderContent={extraHeaderContent}>
+const Link = ({ url, content, specialLink }) => (
+  <StyledLink to={url} special={specialLink ? "exists" : undefined}>
     {content}
   </StyledLink>
 );

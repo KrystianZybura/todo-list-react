@@ -5,8 +5,8 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.primary};
 
-  ${({ extraHeaderContent }) =>
-    extraHeaderContent &&
+  ${({ special }) =>
+    special &&
     css`
       @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         margin-top: 15px;
