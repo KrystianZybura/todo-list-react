@@ -16,14 +16,20 @@ const Button = styled.button`
   border: none;
   transition: 0.3s disabled 0s;
 
-  &:hover {
-    ${({ disabled }) =>
-      !disabled &&
-      css`
+  ${({ disabled }) =>
+    !disabled &&
+    css`
+      &:active {
+        outline: 2px solid #000;
+        outline-offset: 3px;
+        border-radius: 1px;
+      }
+
+      &:hover {
         filter: brightness(120%);
         cursor: pointer;
-      `}
-  }
+      }
+    `}
 
   &:disabled {
     color: ${({ theme }) => theme.colors.disabledButton};
