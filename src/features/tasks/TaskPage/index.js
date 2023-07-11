@@ -4,7 +4,7 @@ import Container from "../../../common/Container";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
-import Link from "../../../common/Link";
+import Link from "../Link";
 
 const TaskPage = () => {
   const { id } = useParams();

@@ -8,7 +8,7 @@ import {
 } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter } from "../queryParameters";
-import Link from "../../../../common/Link";
+import Link from "../../Link";
 
 const TaskList = () => {
   const dispatch = useDispatch();
