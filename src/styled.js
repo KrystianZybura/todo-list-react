@@ -10,8 +10,14 @@ const StyledNavlink = styled(NavLink)`
   color: #fff;
   text-decoration: none;
 
+  &:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid currentColor;
+  }
+
   &.active {
     font-weight: bold;
+    border: none;
   }
 `;
 
