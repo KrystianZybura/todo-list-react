@@ -9,11 +9,8 @@ const StyledLink = styled(Link)`
     extraHeaderContent &&
     css`
       @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
         margin-top: 15px;
-        align-items: center;
+        place-self: center;
       }
     `}
 
