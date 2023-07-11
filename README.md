@@ -18,15 +18,22 @@ Check my website here --> [To do List - React](https://krystianzybura.github.io/
 - _FlexBox_
 - _Grid_
 - _Immutability_
-- _React.js_
+- _Media Queries_
+- _React_
 - _Create React App_
 - _Babel_
 - _Webpack_
-- _Hooks_
+- _React Hooks: useRef, useState_
 - _Custom Hooks_
 - _Styled-Components_
+- _Local Storage_
 - _Redux Toolkit_
+- _Redux Saga_
 - _React - Redux_
+- _React Router_
+- _Generator functions_
+- _Async functions_
+- _Axios_
 
 # Getting Started with Create React App
 
