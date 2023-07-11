@@ -12,6 +12,8 @@ const StyledLink = styled(Link)`
 
   &:hover {
     filter: brightness(120%);
+    padding-bottom: 5px;
+    border-bottom: 1px solid currentColor;
   }
 `;
 
