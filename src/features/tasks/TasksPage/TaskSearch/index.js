@@ -1,9 +1,9 @@
 import Input from "../../Input";
-import searchQueryParamName from "../searchQueryParamName";
 import {
   useQueryParameter,
   useReplaceQueryParameter,
 } from "../queryParameters";
+import searchQueryParamName from "../searchQueryParamName";
 import { Wrapper } from "./styled";
 
 const TaskSearch = () => {

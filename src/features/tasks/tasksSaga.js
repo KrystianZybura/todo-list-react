@@ -1,19 +1,20 @@
 import {
+  all,
   call,
   debounce,
   put,
   select,
   takeEvery,
-  all,
 } from "redux-saga/effects";
+
 import { getExampleTasks } from "./getExampleTasks";
-import {
-  setTasks,
-  fetchExampleTasks,
-  setIsFetchingExampleTasks,
-} from "./tasksSlice";
-import { selectTasks } from "./tasksSlice";
 import { setLocalStorage } from "./tasksInLocalStorage";
+import {
+  fetchExampleTasks,
+  selectTasks,
+  setIsFetchingExampleTasks,
+  setTasks,
+} from "./tasksSlice";
 
 function* fetchExampleTaskHandler() {
   try {

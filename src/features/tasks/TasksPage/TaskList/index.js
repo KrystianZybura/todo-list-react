@@ -1,14 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
-import { List, Item, Content, Button, ToggleDoneButton } from "./styled";
-import {
-  selectHideDone,
-  toggleTaskDone,
-  removeTask,
-  selectTasksByQuery,
-} from "../../tasksSlice";
-import searchQueryParamName from "../searchQueryParamName";
-import { useQueryParameter } from "../queryParameters";
+
 import Link from "../../Link";
+import {
+  removeTask,
+  selectHideDone,
+  selectTasksByQuery,
+  toggleTaskDone,
+} from "../../tasksSlice";
+import { useQueryParameter } from "../queryParameters";
+import searchQueryParamName from "../searchQueryParamName";
+import { Button, Content, Item, List, ToggleDoneButton } from "./styled";
 
 const TaskList = () => {
   const dispatch = useDispatch();
