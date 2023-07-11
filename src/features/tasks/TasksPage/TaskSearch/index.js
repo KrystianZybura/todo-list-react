@@ -4,6 +4,7 @@ import {
   useQueryParameter,
   useReplaceQueryParameter,
 } from "../queryParameters";
+import { Wrapper } from "./styled";
 
 const TaskSearch = () => {
   const query = useQueryParameter(searchQueryParamName);
@@ -17,11 +18,13 @@ const TaskSearch = () => {
   };
 
   return (
-    <Input
-      placeholder="Filtruj zadania"
-      value={query ?? ""}
-      onChange={onInputChange}
-    />
+    <Wrapper>
+      <Input
+        placeholder="Filtruj zadania"
+        value={query ?? ""}
+        onChange={onInputChange}
+      />
+    </Wrapper>
   );
 };
 export default TaskSearch;
