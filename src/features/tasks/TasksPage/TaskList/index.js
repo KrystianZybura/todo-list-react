@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 
+import { DEFAULT_ROUTE } from "../../../../routes/routePaths";
 import Link from "../../Link";
 import {
   removeTask,
@@ -27,7 +28,7 @@ const TaskList = () => {
             {task.done ? "✓" : ""}
           </ToggleDoneButton>
           <Content done={task.done}>
-            <Link url={`/zadania/${task.id}`} content={task.content} />
+            <Link url={`${DEFAULT_ROUTE}/${task.id}`} content={task.content} />
           </Content>
           <Button onClick={() => dispatch(removeTask(task.id))}>🗑</Button>
         </Item>
