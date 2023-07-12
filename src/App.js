@@ -6,7 +6,7 @@ import {
 } from "react-router-dom/cjs/react-router-dom.min";
 
 import Navigation from "./common/Navigation";
-import AuthorPage from "./features/author";
+import AuthorPage from "./features/author/AuthorPage";
 import TaskPage from "./features/tasks/TaskPage";
 import TasksPage from "./features/tasks/TasksPage";
 
