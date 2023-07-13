@@ -6,6 +6,8 @@ import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 import Link from "../Link";
 import { getTaskById } from "../tasksSlice";
+import { DEFAULT_ROUTE } from "../../../routes/routePaths";
+
 
 const TaskPage = () => {
   const { id } = useParams();
@@ -19,7 +21,7 @@ const TaskPage = () => {
         title={task ? task.content : "Nie znaleziono zadania 😥"}
         extraHeaderContent={
           <Link
-            url={"/zadania/"}
+            url={DEFAULT_ROUTE}
             content={"Powrót do listy zadań"}
             specialLink
           />
