@@ -17,7 +17,7 @@ const SwitchRoute = () => (
     <Route path={TASK_PAGE}>
       <TaskPage />
     </Route>
-    <Route path="/">
+    <Route>
       <Redirect to={DEFAULT_ROUTE} />
       <TasksPage />
     </Route>
