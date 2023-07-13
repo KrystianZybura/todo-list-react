@@ -10,7 +10,6 @@ const AuthorPage = () => (
       title={"Krystian Żybura"}
       body={
         <Article>
-          <h2>Deployment test 😎</h2>
           <p>
             <strong>Cześć</strong>, chciałbym Ci trochę o sobie opowiedzieć -
             jestem początkującym programistą, mam 21 lat i być może już
