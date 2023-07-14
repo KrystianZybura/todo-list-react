@@ -4,10 +4,9 @@ import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import Container from "../../../common/Container";
 import Header from "../../../common/Header";
 import Section from "../../../common/Section";
+import { DEFAULT_ROUTE } from "../../../routes/routePaths";
 import Link from "../Link";
 import { getTaskById } from "../tasksSlice";
-import { DEFAULT_ROUTE } from "../../../routes/routePaths";
-
 
 const TaskPage = () => {
   const { id } = useParams();
